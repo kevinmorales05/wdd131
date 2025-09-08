@@ -9,6 +9,12 @@
       content="WDD 131 – Dynamic Web Fundamentals. Kevin Daniel Morales Estrella. Home web page and about Kevin Morales Life."
     />
     <meta name="author" content="Kevin Morales" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epunda+Slab:ital,wght@0,300..900;1,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Pridi:wght@200;300;400;500;600;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles/base.css" />
     <script src="scripts/getdates.js" defer></script>
   </head>
@@ -16,9 +22,14 @@
     <header>
       <h1>WDD 131: Dynamic Web Fundamentals - Kevin Morales</h1>
       <nav class="navigation">
-        <a href="https://www.linkedin.com/in/kevin-morales-5b7682153/">LinkedIn</a>
+        <a href="https://www.linkedin.com/in/kevin-morales-5b7682153/"
+          >LinkedIn</a
+        >
         <a href="https://byupw.instructure.com/">Canvas</a>
-        <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/37?lang=eng&id=p37#p37">Scripture</a>
+        <a
+          href="https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/37?lang=eng&id=p37#p37"
+          >Scripture</a
+        >
         <a href="#">Final Project</a>
       </nav>
     </header>
@@ -26,29 +37,32 @@
     <main>
       <section class="about">
         <h2>About Me</h2>
-        <p>
-          My name is Kevin Morales, though many people call me Kev. I was born
-          and raised in Ecuador, a country full of culture, history, and natural
-          beauty. Today, I live in Orem, Utah, where I balance my life as a
-          backend developer, a student at BYU–Idaho, and, most importantly, a
-          husband and father.
-        </p>
-        <p>
-          I specialize in building scalable software systems, with a particular
-          passion for fintech solutions and AI-driven applications. I enjoy
-          tackling complex problems, designing efficient architectures, and
-          creating technology that makes people’s lives easier.
-        </p>
-        <p>
-          Outside of work and studies, my greatest joy is my family. My wife,
-          Denisse, is my constant source of encouragement and inspiration, and
-          our son, Leonel, fills our lives with energy, love, and curiosity. I
-          deeply value spending quality time with them—whether it’s exploring
-          new places, enjoying simple moments at home, or learning together as a
-          family.
-        </p>
+        <div class="sectionPerson">
+          <div class="person">
+            <p>
+              My name is Kevin Morales, though many people call me Kev. I was
+              born and raised in Ecuador, a country full of culture, history,
+              and natural beauty. Today, I live in Orem, Utah, where I balance
+              my life as a backend developer, a student at BYU–Idaho, and, most
+              importantly, a husband and father.
+            </p>
+            
+            <p>
+              Outside of work and studies, my greatest joy is my family. My
+              wife, Denisse, is my constant source of encouragement and
+              inspiration, and our son, Leonel, fills our lives with energy,
+              love, and curiosity. I deeply value spending quality time with
+              them—whether it’s exploring new places, enjoying simple moments at
+              home, or learning together as a family.
+            </p>
+          </div>
+          <div class="photoSection">
+            <img src="images/kevinmorales.JPG" alt="Kevin Morales Photo" />
+          </div>
+        </div>
 
-        <h3>Quito, Ecuador</h3>
+        <h3 id="city">Quito, Ecuador</h3>
+        <hr></hr>
         <div class="location">
           <img src="images/ecuador-flag.png" alt="Flag of Ecuador" />
           <p>
@@ -73,7 +87,7 @@
 
     <footer>
       <p>&copy; <span id="year"></span> Kevin Morales 🌎 Utah</p>
-      <p>Last Modification: <span id="lastModified"></span> </p>
+      <p>Last Modification: <span id="lastModified"></span></p>
     </footer>
   </body>
 </html>

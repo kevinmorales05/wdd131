@@ -1,21 +1,48 @@
-/* General reset */
+:root {
+  --color-darkest: #0a090c;
+  --color-light: #f0edee;
+  --color-deep-teal: #07393c;
+  --color-medium-teal: #2c666e;
+  --color-light-teal: #90ddf0;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Poppins", Arial, sans-serif;
   line-height: 1.6;
-  background-color: #fff;
-  color: #333;
+  color: var(--color-darkest);
+  background-color: var(--color-light);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Headings - use slab serif for strong titles */
+h1,
+h2 {
+  font-family: "Epunda Slab", "Pridi", serif;
+  color: var(--color-light);
+  margin-bottom: 0.5rem;
+}
+
+/* Navigation and footer - clean, modern look */
+.navigation a,
+footer {
+  font-family: "Ubuntu", sans-serif;
+}
+
+/* Optional: italic emphasis inside text */
+em {
+  font-family: "Pridi", serif;
 }
 
 /* Header */
 header {
-  background-color: #113d63;
-  color: #fff;
+  background-color: var(--color-darkest);
+  color: var(--color-light);
   text-align: center;
   padding: 1rem;
 }
@@ -29,18 +56,18 @@ header h1 {
 .navigation {
   display: flex;
   justify-content: center;
-  background: #333;
+  background: var(--color-deep-teal);
 }
 
 .navigation a {
-  color: #eee;
+  color: var(--color-light);
   padding: 0.75rem 1rem;
   text-decoration: none;
   text-align: center;
 }
 
 .navigation a:hover {
-  background: #555;
+  background: var(--color-medium-teal);
 }
 
 /* Main layout */
@@ -52,35 +79,92 @@ main {
 }
 
 /* About section */
-.about, .resources {
-  border: 1px solid #eee;
-  border-radius: 6px;
-  padding: 1rem;
-  background: #f9f9f9;
+.about,
+.resources {
+  border: 1px solid var(--color-medium-teal);
+border-radius: 10px;
+  background: var(--color-light);
+
+}
+.about h2,
+.resources h2 {
+  text-align: center;
+  background-color: var(--color-deep-teal);
+  border-radius: 8px 8px 0px 0px;
+  color: var(--color-light) important!;
 }
 
-.about h2, .resources h2 {
+.resources  ul li {
+    padding-left: 30px;
+}
+
+/* Flex container for text and photo */
+.sectionPerson {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+/* Text content */
+.person {
+  flex: 2;
+  font-family: "Poppins", Arial, sans-serif;
+  color: var(--color-darkest);
+  line-height: 1.6;
+  padding: 5px;
+}
+
+#city {
+  text-align: center;
+  margin: 0 auto;
+  font-size: 2rem;
+}
+hr {
+  width: 60%;
+
+  margin: 0 auto;
+}
+
+/* Image on the right */
+.photoSection {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 5px;
+}
+
+.photoSection img {
+  max-width: 100%;
+  border-radius: 8px;
+  border: 2px solid var(--color-medium-teal);
+}
+
+.about h2,
+.resources h2 {
   margin-bottom: 0.5rem;
-  color: #113d63;
+  color: var(--color-light);
 }
 
 .location {
   display: flex;
   align-items: center;
   margin-top: 1rem;
+  padding: 40px;
 }
 
 .location img {
   width: 100px;
   height: auto;
   margin-right: 1rem;
-  border: 1px solid #ddd;
+  border: 1px solid var(--color-medium-teal);
 }
 
 /* Sidebar resources */
 .resources ul {
-  list-style: none;
-  padding-left: 0;
+  padding: 5px;
+  padding-left: 45px;
 }
 
 .resources li {
@@ -88,18 +172,19 @@ main {
 }
 
 .resources a {
-  color: #113d63;
+  color: var(--color-deep-teal);
   text-decoration: none;
 }
 
 .resources a:hover {
+  color: var(--color-light-teal);
   text-decoration: underline;
 }
 
 /* Footer */
 footer {
-  background: #113d63;
-  color: #fff;
+  background: var(--color-darkest);
+  color: var(--color-light);
   text-align: center;
   padding: 1rem;
   margin-top: 1rem;
