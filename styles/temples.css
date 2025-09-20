@@ -1,0 +1,37 @@
+
+
+/* Responsive style */
+@media (max-width: 768px) {
+  /* Hide the big menu */
+  #templeNav ul {
+    display: none;
+    flex-direction: column;
+    background-color: #f39c12;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    padding: 1rem;
+  }
+#templeNav ul li a:hover {
+  color: black;
+}
+  #templeNav ul.active {
+    display: flex;
+  }
+
+  /* Show hamburguer menu */
+  .hamburger {
+    display: flex;
+  }
+    /* Show close button */
+.close-btn {
+    display: block;
+  }
+
+  #templesSection {
+    margin-top: 10px;
+    
+
+}
+}
