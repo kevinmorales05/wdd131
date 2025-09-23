@@ -1,0 +1,97 @@
+/* Responsive style */
+@media (max-width: 500px) {
+  /* Main Title Section */
+  .place-title {
+    text-align: center;
+    background-color: red;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .place-title .titlePage {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+      1px 1px 0 #000, -1px 0 0 #000, 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000;
+  }
+  .brand {
+    background-color: black;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    height: 2cqb;
+    margin: 0 auto;
+    margin-bottom: 0px;
+  }
+  main {
+    margin: 0;
+    padding: 0;
+  }
+  /* Main Title Section */
+  .place-background {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%; /* el contenedor nunca será más ancho que la pantalla */
+    overflow: hidden;
+  }
+
+  .background-image {
+    width: 100%;
+
+    margin-top: 0;
+  }
+  .data,
+  .weather {
+    text-align: center;
+    font-size: 1rem;
+
+    border: solid 0.5px gray;
+    width: 100%;
+  }
+
+  #weatherIcon {
+  width: 60px;
+  height: 60px;
+  object-fit: contain; /* o cover según prefieras */
+}
+  .data-list {
+    list-style-type: none;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 400px;
+  }
+  .data-list li {
+    margin: 0.7rem 0;
+  }
+  .subtitle {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 1rem 0;
+    margin-bottom: 0px;
+  }
+  b {
+    color: red;
+    font-weight: bolder;
+  }
+  /* Footer */
+  footer {
+    background: red;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+}

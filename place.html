@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stanford, California</title>
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/place.css" />
+    <link
+      rel="stylesheet"
+      href="styles/place-large.css"
+      media="(min-width: 800px)"
+    />
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/place.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="place-title">
+        <h1 class="titlePage">Stanford, California</h1>
+      </div>
+      <div class="brand"></div>
+    </header>
+    <main>
+      <div class="place-background">
+        <picture class="background-image">
+          <source
+            media="(width < 600px)"
+            srcset="images/place/stanfordSmall.webp"
+          />
+          <source
+            media="(width >= 600px and width < 800px)"
+            srcset="images/place/stanfordBig.webp"
+          />
+          <source
+            media="(width >= 800px)"
+            srcset="images/place/stanfordVeryBig.webp"
+          />
+          <img
+            src="images/place/stanfordVeryBig.webp"
+            alt="Stanford City"
+            loading="lazy"
+          />
+        </picture>
+
+        <div class="data">
+          <h2 class="subtitle">Data</h2>
+          <ul class="data-list">
+            <li><b>Area:</b> 8.0 sq mi (20.7 km²)</li>
+            <li><b>Population:</b> ~21,150 (2020 census)</li>
+            <li><b>Languages:</b> English (majority)</li>
+            <li><b>Currency:</b> US Dollar (USD, $)</li>
+            <li>
+              <b>Time Zone:</b> Pacific Time Zone (UTC−8, UTC−7 in summer)
+            </li>
+            <li><b>Calling Code:</b> +1</li>
+            <li><b>Internet TLD:</b> .us</li>
+          </ul>
+        </div>
+        <div class="weather">
+          <h2 class="subtitle">Weather</h2>
+          <ul class="data-list">
+            <li>
+              <img
+                src="images/place/weatherIcon.svg"
+                alt="Stanford City"
+                loading="lazy"
+                id="weatherIcon"
+              />
+            </li>
+            <li><b>Temperature:</b> <span id="temperature"></span></li>
+            <li><b>Conditions:</b> <span id="conditions"></span></li>
+
+            <li><b>Wind:</b> <span id="wind"></span></li>
+            <li><b>Wind Chill:</b> <span id="windChill"></span></li>
+          </ul>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; <span id="year"></span> Kevin Morales 🇺🇸 Utah</p>
+      <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+  </body>
+</html>
