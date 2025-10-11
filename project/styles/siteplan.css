@@ -1,0 +1,173 @@
+/* ===============================
+   Google Fonts Import
+   =============================== */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+/* ===============================
+   Global Variables
+   =============================== */
+:root {
+  /* 🎨 Color Palette */
+  --color-background: #DBF9F4;
+  --color-primary: #B07BAC;
+  --color-accent: #5F7367;
+  --color-border: #D9D7DD;
+  --color-white: #ffffff;
+  --color-text: black;
+
+  /* ✍️ Typography */
+  --font-heading:  "Pacifico", cursive;;
+  --font-body: "Raleway", sans-serif;
+}
+
+/* ===============================
+   Base Styles
+   =============================== */
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-background);
+  color: var(--color-text);
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+/* ===============================
+   Header
+   =============================== */
+header {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  text-align: center;
+  padding: 2rem 1rem;
+  border-bottom: 4px solid var(--color-accent);
+}
+
+header h1 {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+}
+
+header h2 {
+  font-family: var(--font-heading);
+  font-weight: 300;
+  margin-top: 0.5rem;
+  font-size: 1.5rem;
+}
+
+/* ===============================
+   Main Content
+   =============================== */
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  background: var(--color-white);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+h3 {
+  font-family: var(--font-heading);
+  color: var(--color-primary);
+  border-bottom: 2px solid var(--color-accent);
+  padding-bottom: 0.3rem;
+}
+
+/* ===============================
+   Color Palette
+   =============================== */
+.color-palette {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.color-sample {
+  flex: 1;
+  min-width: 120px;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 8px;
+  border: 1px solid var(--color-border);
+  font-size: 0.9rem;
+  color: var(--color-text);
+  font-weight: 600;
+  position: relative;
+}
+
+/* Automatically set the background color using the CSS variable */
+.color-sample[data-color] {
+  background-color: var(--color-white);
+}
+
+.color-sample[data-color="--color-background"] {
+  background-color: var(--color-background);
+}
+.color-sample[data-color="--color-primary"] {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+.color-sample[data-color="--color-accent"] {
+  background-color: var(--color-accent);
+}
+.color-sample[data-color="--color-border"] {
+  background-color: var(--color-border);
+}
+.color-sample[data-color="--color-white"] {
+  background-color: var(--color-white);
+  border: 1px solid var(--color-border);
+}
+
+/* Add the hex value of each color below its label */
+.color-sample::after {
+  content: attr(data-color) " → " attr(data-value);
+  display: block;
+  font-size: 0.8rem;
+  font-weight: normal;
+  opacity: 0.8;
+  margin-top: 0.5rem;
+}
+
+/* ===============================
+   Wireframe & Footer
+   =============================== */
+.wireframe-section img {
+  width: 100%;
+  max-width: 500px;
+  display: block;
+  margin: 1rem auto;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+}
+
+footer {
+  text-align: center;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  padding: 1rem;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  border-top: 4px solid var(--color-accent);
+}
+
+/* ===============================
+   Responsive Design
+   =============================== */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  main {
+    padding: 1rem;
+  }
+
+  .color-palette {
+    flex-direction: column;
+  }
+}
