@@ -1,0 +1,14 @@
+@media (min-width: 768px) {
+  body {
+    padding: 2rem;
+  }
+
+  main h1 {
+    font-size: 2rem;
+  }
+
+  main p {
+    font-size: 1.1rem;
+    padding: 1.5rem;
+  }
+}

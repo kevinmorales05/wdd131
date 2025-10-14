@@ -1,0 +1,23 @@
+/* Apply styles for screens 768px and above */
+@media (min-width: 768px) {
+  body {
+    padding: 2rem;
+  }
+
+  form {
+    padding: 2rem;
+  }
+
+  .rating {
+    max-width: 300px;
+  }
+
+  input[type="submit"] {
+    font-size: 1.1rem;
+    padding: 1rem;
+  }
+
+  header h1.titlePage {
+    font-size: 2rem;
+  }
+}

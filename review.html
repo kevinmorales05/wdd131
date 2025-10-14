@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Student Kevin Morales" />
+    <meta name="description" content="Form product review." />
+    <title>Review Submitted</title>
+    <link rel="stylesheet" href="styles/review-large.css" />
+    <link rel="stylesheet" href="styles/review.css" />
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/review.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <h1>Thank you for your review!</h1>
+      <p id="reviewCountMessage"></p>
+    </main>
+    <footer>
+      <p>&copy; <span id="year"></span> Kevin Morales 🇺🇸 Utah</p>
+      <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+      document.getElementById("lastModified").textContent =
+        document.lastModified;
+    </script>
+  </body>
+</html>
